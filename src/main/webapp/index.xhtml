@@ -14,7 +14,7 @@
             id <h:inputText value="#{beanJFPessoa.id}" size="10"/>
             nome <h:inputText value="#{beanJFPessoa.nome}" size="30"/>
 
-            <h:selectOneMenu value="#{beanJFPessoa.cidade}">
+            <h:selectOneMenu value="#{beanJFPessoa.cidade}" style="font-size: 14px; width: 300px;">
                 <f:selectItem itemValue="" itemLabel="=== Selecione uma Cidade ===" />
                 <f:selectItems value="#{beanJFCidade.all}" var="c" itemLabel="#{c.nome}" itemValue="#{c.id}" />
             </h:selectOneMenu>
