@@ -39,11 +39,11 @@ public class BeanJFPessoa {
     
     public void add(){
         if(id==0){
-            FacesContext.getCurrentInstance().addMessage("ERRO",new FacesMessage("Erro: Código não pode ser zero."));
+            FacesContext.getCurrentInstance().addMessage("ERRO",new FacesMessage("Novo Erro: Código não pode ser igual a zero."));
           //  return "";
         }
         if(beanPessoa.find(id)!=null){
-            FacesContext.getCurrentInstance().addMessage("ERRO",new FacesMessage("Erro: Código existente."));
+            FacesContext.getCurrentInstance().addMessage("ERRO",new FacesMessage("Novo Erro: Código já existe."));
             //return "";
         }
         Pessoa p = new Pessoa();
